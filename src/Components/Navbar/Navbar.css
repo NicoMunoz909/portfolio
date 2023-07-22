@@ -14,6 +14,7 @@
 
 .navbar-icon {
   width: 22vh;
+  filter: drop-shadow(0px 0px 4px rgb(187, 186, 186));
 }
 
 .navbar-links {
@@ -22,26 +23,35 @@
   width: 40%;
 }
 
+.navbar-links a {
+  position: relative;
+}
+
 .navbar-links a::after {
   display: block;
-  position: relative;
+  position: absolute;
   left: 50%;
+  top: 0%;
   content: "";
   width: 0;
+  height: 0;
   text-decoration: underline;
-  transition: all 200ms;
+  transition: all 200ms, top 400ms;
 }
 
 .navbar-links a:hover::after {
   display: block;
-  width: 50%;
-  box-shadow: 0px 5px 20px 2px white, 0px 3px 4px 1px rgb(255, 255, 255);
+  width: 80%;
+  box-shadow: 0px 0px 25px 5px white, 0px 25px 25px 5px white;
   transform: translateX(-50%);
 }
 
 .navbar-links a.active::after {
   display: block;
-  width: 50%;
-  box-shadow: 0px 5px 20px 2px white, 0px 3px 4px 1px rgb(255, 255, 255);
+  top: 140%;
+  bottom: 0%;
+  width: 80%;
+  box-shadow: 0px 0px 1px 1px white, 0px 1px 1px 1px white;
   transform: translateX(-50%);
+  border-radius: 100%;
 }
