@@ -1,0 +1,19 @@
+.home {
+  width: 100%;
+  margin: auto;
+  margin-top: 30vh;
+  padding: 0 10%;
+  text-align: left;
+}
+
+.home-socials {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 200px;
+  font-size: 24px;
+}
+
+.home-socials a:hover {
+  filter: drop-shadow(0px 0px 10px white);
+}

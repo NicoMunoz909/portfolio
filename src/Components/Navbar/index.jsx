@@ -1,5 +1,6 @@
 import logo from "../../assets/nmz-no-enso.svg";
 import "./Navbar.css";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -8,9 +9,9 @@ const Navbar = () => {
         <img className="navbar-icon" id="logo-icon" src={logo} alt="NMZ Logo SVG" />
       </a>
       <div className="navbar-links">
-        <a href="/about">About Me</a>
-        <a href="/projects">Projects</a>
-        <a href="/contact">Contact</a>
+        <NavLink to="/about">About Me</NavLink>
+        <NavLink to="/projects">Projects</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
       </div>
     </div>
   );
