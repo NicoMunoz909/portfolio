@@ -17,3 +17,7 @@
 .home-socials a:hover {
   filter: drop-shadow(0px 0px 10px white);
 }
+
+#see-more:hover {
+  text-decoration: underline;
+}

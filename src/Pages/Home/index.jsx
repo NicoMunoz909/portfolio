@@ -15,7 +15,9 @@ const Home = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aspernatur ad laudantium, necessitatibus atque,
         enim excepturi cumque error libero in optio quasi nobis cupiditate consequuntur sed qui deserunt ipsam! Dicta.
       </p>
-      <Link to="/about">See more about me &#8594;</Link>
+      <Link to="/about" id="see-more">
+        See more about me &#8594;
+      </Link>
       <div className="home-socials">
         <a href="https://github.com/NicoMunoz909" target="_blank" rel="noreferrer">
           <FaGithub />
