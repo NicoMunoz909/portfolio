@@ -1,11 +1,3 @@
-.home {
-  width: 100%;
-  margin: auto;
-  margin-top: 30vh;
-  padding: 0 10%;
-  text-align: left;
-}
-
 .home-socials {
   display: flex;
   justify-content: space-between;
