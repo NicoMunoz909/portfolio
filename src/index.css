@@ -18,10 +18,22 @@ a {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Major Mono Display", monospace;
   font-size: 48px;
   filter: drop-shadow(0px 0px 2px rgb(141, 141, 141));
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  font-size: 28px;
 }
 
 .content {
