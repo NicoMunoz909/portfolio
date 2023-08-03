@@ -13,7 +13,7 @@ const Projects = () => {
         description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore pariatur obcaecati blanditiis ab
         alias illum dolores cumque, praesentium impedit error, iure explicabo vero! Unde sed excepturi qui
         tempore maiores a!"
-        link="bolson-vegetal"
+        link="https://bolson-vegetal.vercel.app/"
         imgSrc={bolsonVegetal}
         style={{ float: "left" }}
       />
@@ -22,7 +22,7 @@ const Projects = () => {
         description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore pariatur obcaecati blanditiis ab
         alias illum dolores cumque, praesentium impedit error, iure explicabo vero! Unde sed excepturi qui
         tempore maiores a!"
-        link="tip-tracer"
+        link="https://tip-tracer-client.vercel.app/"
         imgSrc={tipTracer}
         style={{ float: "right" }}
       />
@@ -31,7 +31,7 @@ const Projects = () => {
         description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore pariatur obcaecati blanditiis ab
         alias illum dolores cumque, praesentium impedit error, iure explicabo vero! Unde sed excepturi qui
         tempore maiores a!"
-        link="budget-tracker"
+        link="https://budget-tracker-client-sage.vercel.app/"
         imgSrc={budgetTracker}
         style={{ float: "left" }}
       />
