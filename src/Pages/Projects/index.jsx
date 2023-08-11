@@ -10,27 +10,21 @@ const Projects = () => {
       <h1>projects</h1>
       <Project
         title="bolson vegetal"
-        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore pariatur obcaecati blanditiis ab
-        alias illum dolores cumque, praesentium impedit error, iure explicabo vero! Unde sed excepturi qui
-        tempore maiores a!"
+        description="Shopping page for a greengrocers shop I used to work for. It implements a shopping cart and takes you to WhatsApp with a fully formatted message with your order ready to send"
         link="https://bolson-vegetal.vercel.app/"
         imgSrc={bolsonVegetal}
         style={{ float: "left" }}
       />
       <Project
         title="tip tracer"
-        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore pariatur obcaecati blanditiis ab
-        alias illum dolores cumque, praesentium impedit error, iure explicabo vero! Unde sed excepturi qui
-        tempore maiores a!"
+        description="A web app I made while working as a waiter to keep track of all the tips I earned"
         link="https://tip-tracer-client.vercel.app/"
         imgSrc={tipTracer}
         style={{ float: "right" }}
       />
       <Project
         title="budget tracker"
-        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore pariatur obcaecati blanditiis ab
-        alias illum dolores cumque, praesentium impedit error, iure explicabo vero! Unde sed excepturi qui
-        tempore maiores a!"
+        description="A simple app to keep track of personal budget. Made it as a challenge to enter a bootcamp but I plan on upgrading it for personal use"
         link="https://budget-tracker-client-sage.vercel.app/"
         imgSrc={budgetTracker}
         style={{ float: "left" }}
