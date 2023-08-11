@@ -5,7 +5,7 @@ import "./Contact.css";
 const Contact = () => {
   return (
     <div className="contact content">
-      <h2>contact me</h2>
+      <h1>contact me</h1>
       <div className="contact-socials">
         <a href="mailto:nimunoz28@gmail.com" target="_blank" rel="noreferrer">
           <FiMail />

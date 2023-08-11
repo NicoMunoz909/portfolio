@@ -7,7 +7,7 @@ import Project from "../../Components/Project";
 const Projects = () => {
   return (
     <div className="projects content">
-      <h2>projects</h2>
+      <h1>projects</h1>
       <Project
         title="bolson vegetal"
         description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore pariatur obcaecati blanditiis ab

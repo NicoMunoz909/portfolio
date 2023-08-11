@@ -6,6 +6,12 @@
   font-size: 24px;
 }
 
+.home h1::after {
+  content: "web developer";
+  text-align: center;
+  font-size: 30px;
+}
+
 .home-socials a:hover {
   filter: drop-shadow(0px 0px 10px white);
 }

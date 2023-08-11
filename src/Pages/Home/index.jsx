@@ -5,16 +5,10 @@ import { FaGithub, FaInstagram, FaLinkedinIn, FaSoundcloud } from "react-icons/f
 const Home = () => {
   return (
     <div className="home content">
-      <h1>hi, i'm nico muñoz</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quam praesentium ab expedita omnis sed
-        eligendi optio dolor ducimus labore consequuntur magnam excepturi dolores nobis voluptatum, quisquam,
-        similique earum nihil.
-      </p>
+      <h1>nicolás muñoz |</h1>
       <p style={{ marginBottom: "100px" }}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aspernatur ad laudantium,
-        necessitatibus atque, enim excepturi cumque error libero in optio quasi nobis cupiditate consequuntur
-        sed qui deserunt ipsam! Dicta.
+        Gamer, traveller and music lover. I enjoy making web apps to solve every-day tasks. Constantly
+        learning.
       </p>
       <Link to="/about" id="see-more">
         See more about me &#8594;
