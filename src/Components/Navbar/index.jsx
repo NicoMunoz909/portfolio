@@ -1,4 +1,4 @@
-import logo from "../../assets/nmz-no-enso.svg";
+import logo from "/nmz-no-enso.svg";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 

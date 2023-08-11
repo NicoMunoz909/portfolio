@@ -1,0 +1,38 @@
+.projectDetailed-icons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.projectDetailed-icons div {
+  text-align: center;
+  flex-shrink: 0;
+  margin: 20px;
+  margin-left: 0;
+}
+
+.projectDetailed-icons div * {
+  display: block;
+}
+
+.projectDetailed-icons svg {
+  margin: auto;
+  font-size: 48px;
+}
+
+.projectDetailed-info {
+  float: left;
+  max-width: 30vw;
+}
+
+.projectDetailed-info__links {
+  margin-top: 10px;
+}
+
+.projectDetailed-info__links a {
+  margin: 20px;
+}
+
+.projectDetailed-info__links a:hover {
+  text-decoration: underline;
+}

@@ -22,7 +22,7 @@ import {
   SiSequelize,
   SiVercel,
 } from "react-icons/si";
-import imagenPerfil from "../../assets/perfil.jpg";
+import imagenPerfil from "/perfil.jpg";
 
 const About = () => {
   return (

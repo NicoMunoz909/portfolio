@@ -1,11 +1,11 @@
 import "./Project.css";
 import { Link } from "react-router-dom";
 
-const Project = ({ imgSrc, title, description, link, style }) => {
+const Project = ({ imgSrc, title, description, deploy, link, style }) => {
   return (
     <div className="project-container">
       <div className="project-container__img" style={style}>
-        <Link to={link} target="_blank">
+        <Link to={deploy} target="_blank">
           <img src={imgSrc} alt="" />
         </Link>
       </div>
