@@ -1,5 +1,27 @@
 import "./About.css";
-import { FaReact } from "react-icons/fa";
+import {
+  SiAmazonec2,
+  SiAmazonrds,
+  SiAwsamplify,
+  SiCss3,
+  SiEslint,
+  SiExpress,
+  SiGit,
+  SiGithub,
+  SiHtml5,
+  SiJavascript,
+  SiMongodb,
+  SiMongoose,
+  SiMysql,
+  SiNginx,
+  SiNodedotjs,
+  SiNpm,
+  SiPostman,
+  SiReact,
+  SiRender,
+  SiSequelize,
+  SiVercel,
+} from "react-icons/si";
 
 const About = () => {
   return (
@@ -41,66 +63,96 @@ const About = () => {
       </div>
       <div className="about-technologies">
         <h2>technologies</h2>
+        <p>
+          The technologies I've used since starting my journey.
+          <br /> If they are listed here is because I consider I've spent enough time with to have at least a
+          solid understanding on the basics, and I am able to use the documentation to work around any issues
+          I face with them.
+        </p>
         <div className="about_technologies__icons">
           <div>
-            <FaReact />
+            <SiReact />
             <span>React JS</span>
           </div>
           <div>
-            <FaReact />
-            <span>React JS</span>
+            <SiJavascript />
+            <span>JavaScript</span>
           </div>
           <div>
-            <FaReact />
-            <span>React JS</span>
+            <SiHtml5 />
+            <span>HTML</span>
           </div>
           <div>
-            <FaReact />
-            <span>React JS</span>
+            <SiCss3 />
+            <span>CSS</span>
           </div>
           <div>
-            <FaReact />
-            <span>React JS</span>
+            <SiNodedotjs />
+            <span>Node JS</span>
           </div>
           <div>
-            <FaReact />
-            <span>React JS</span>
+            <SiExpress />
+            <span>Express JS</span>
           </div>
           <div>
-            <FaReact />
-            <span>React JS</span>
+            <SiMysql />
+            <span>MySQL</span>
           </div>
           <div>
-            <FaReact />
-            <span>React JS</span>
+            <SiSequelize />
+            <span>Sequelize</span>
           </div>
           <div>
-            <FaReact />
-            <span>React JS</span>
+            <SiMongodb />
+            <span>MongoDB</span>
           </div>
           <div>
-            <FaReact />
-            <span>React JS</span>
+            <SiMongoose />
+            <span>Mongoose</span>
           </div>
           <div>
-            <FaReact />
-            <span>React JS</span>
+            <SiGit />
+            <span>Git</span>
           </div>
           <div>
-            <FaReact />
-            <span>React JS</span>
+            <SiGithub />
+            <span>GitHub</span>
           </div>
           <div>
-            <FaReact />
-            <span>React JS</span>
+            <SiNginx />
+            <span>Nginx</span>
           </div>
           <div>
-            <FaReact />
-            <span>React JS</span>
+            <SiPostman />
+            <span>Postman</span>
           </div>
           <div>
-            <FaReact />
-            <span>React JS</span>
+            <SiVercel />
+            <span>Vercel</span>
+          </div>
+          <div>
+            <SiRender />
+            <span>Render</span>
+          </div>
+          <div>
+            <SiNpm />
+            <span>NPM</span>
+          </div>
+          <div>
+            <SiAmazonec2 />
+            <span>AWS EC2</span>
+          </div>
+          <div>
+            <SiAwsamplify />
+            <span>AWS Amplify</span>
+          </div>
+          <div>
+            <SiAmazonrds />
+            <span>AWS RDS</span>
+          </div>
+          <div>
+            <SiEslint />
+            <span>EsLint</span>
           </div>
         </div>
       </div>
