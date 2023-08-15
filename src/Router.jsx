@@ -5,6 +5,7 @@ import About from "./Pages/About";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import ProjectDetailed from "./Pages/ProjectDetailed";
+import { bolsonVegetal, budgetTracker, tipTracer } from "./descriptions.jsx";
 
 const Router = () => {
   return (
@@ -24,6 +25,33 @@ const Router = () => {
                   deploy="https://bolson-vegetal.vercel.app/"
                   clientRepo="https://github.com/NicoMunoz909/BolsonVegetal-client"
                   serverRepo="https://github.com/NicoMunoz909/BolsonVegetal-server"
+                  description={bolsonVegetal()}
+                />
+              }
+            ></Route>
+            <Route
+              path="projects/tip-tracer"
+              element={
+                <ProjectDetailed
+                  title={"Tip Tracer"}
+                  imgName={"tip-tracer-screen.png"}
+                  deploy="https://tip-tracer-client.vercel.app/"
+                  clientRepo="https://github.com/NicoMunoz909/TipTracer-client"
+                  serverRepo="https://github.com/NicoMunoz909/TipTracer-server"
+                  description={tipTracer()}
+                />
+              }
+            ></Route>
+            <Route
+              path="projects/budget-tracker"
+              element={
+                <ProjectDetailed
+                  title={"Budget Tracker"}
+                  imgName={"budget-tracker-screen"}
+                  deploy="https://budget-tracker-client-sage.vercel.app/"
+                  clientRepo="https://github.com/NicoMunoz909/BudgetTracker-client"
+                  serverRepo="https://github.com/NicoMunoz909/BudgetTracker-server"
+                  description={budgetTracker()}
                 />
               }
             ></Route>

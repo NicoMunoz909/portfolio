@@ -1,28 +1,78 @@
-.projectDetailed-icons {
+.projectDetailed-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10vh;
+}
+
+.projectDetailed-carouselContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectDetailed-carousel {
+  position: relative;
+  width: 65vw;
+  overflow: hidden;
+  margin: auto;
+}
+
+.projectDetailed-carousel__handles {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 70px;
+}
+
+.projectDetailed-carousel__handles:hover {
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 4px rgb(187, 186, 186));
+}
+
+.projectDetailed-carousel .imgsContainer {
+  display: flex;
+  width: 100%;
+  transform: translateX(-0%);
+}
+
+.projectDetailed-carouselImg {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.projectDetailed-carouselImg img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.projectDetailed-info__description {
+  max-width: 40vw;
+}
+
+.projectDetailed-tech {
+  max-width: 30vw;
+}
+
+.projectDetailed-tech__icons {
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
 }
 
-.projectDetailed-icons div {
+.projectDetailed-tech__icons div {
   text-align: center;
   flex-shrink: 0;
   margin: 20px;
   margin-left: 0;
 }
 
-.projectDetailed-icons div * {
+.projectDetailed-tech__icons div * {
   display: block;
 }
 
-.projectDetailed-icons svg {
+.projectDetailed-tech__icons svg {
   margin: auto;
   font-size: 48px;
-}
-
-.projectDetailed-info {
-  float: left;
-  max-width: 30vw;
 }
 
 .projectDetailed-info__links {
@@ -30,9 +80,10 @@
 }
 
 .projectDetailed-info__links a {
-  margin: 20px;
+  margin-right: 30px;
+  text-decoration: underline;
 }
 
 .projectDetailed-info__links a:hover {
-  text-decoration: underline;
+  filter: drop-shadow(0px 0px 4px rgb(187, 186, 186));
 }

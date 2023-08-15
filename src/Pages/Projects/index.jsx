@@ -1,7 +1,7 @@
 import "./Projects.css";
 import bolsonVegetal from "/bolson-vegetal-screen.png";
 import tipTracer from "/tip-tracer-screen.png";
-import budgetTracker from "/budget-tracker-screen.png";
+import budgetTracker from "/budget-tracker-screen1.png";
 import Project from "../../Components/Project";
 
 const Projects = () => {

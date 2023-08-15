@@ -9,88 +9,112 @@ import {
   SiVercel,
 } from "react-icons/si";
 import "./ProjectDetailed.css";
-import { Link } from "react-router-dom";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-const ProjectDetailed = ({ title, deploy, clientRepo, serverRepo, imgName }) => {
+const ProjectDetailed = ({ title, deploy, clientRepo, serverRepo, imgName, description }) => {
+  let translatePercentage = 0;
+
+  const translateRight = () => {
+    if (translatePercentage < 500) {
+      translatePercentage += 100;
+      const container = document.getElementById("imgsContainer");
+      container.style.transform = `translateX(-${translatePercentage}%)`;
+    }
+  };
+
+  const translateLeft = () => {
+    if (translatePercentage > 0) {
+      translatePercentage -= 100;
+      const container = document.getElementById("imgsContainer");
+      container.style.transform = `translateX(-${translatePercentage}%)`;
+    }
+  };
+
   return (
-    <div className="projectDetailed content">
+    <div className="content">
       <h1>Project | {title}</h1>
-      <div className="projectDetailed-info">
-        <div className="project-container__img">
-          <Link to={deploy} target="_blank">
-            <img src={`/${imgName}`} alt="" />
-          </Link>
-        </div>
-        <div className="projectDetailed-info__links">
-          <a href={deploy} target="_blank" rel="noreferrer">
-            Deploy
-          </a>
-          <a href={clientRepo} target="_blank" rel="noreferrer">
-            Client Repo
-          </a>
-          <a href={serverRepo} target="_blank" rel="noreferrer">
-            Server Repo
-          </a>
-        </div>
-        <h2>Tech Stack</h2>
-        <div className="projectDetailed-icons">
-          <div>
-            <SiReact />
-            <span>React JS</span>
-          </div>
-          <div>
-            <SiCss3 />
-            <span>CSS</span>
-          </div>
-          <div>
-            <SiExpress />
-            <span>Express JS</span>
-          </div>
-          <div>
-            <SiMysql />
-            <span>MySQL</span>
-          </div>
-          <div>
-            <SiSequelize />
-            <span>Sequelize</span>
-          </div>
-          <div>
-            <SiNodedotjs />
-            <span>Node JS</span>
-          </div>
-          <div>
-            <SiVercel />
-            <span>Vercel</span>
-          </div>
-          <div>
-            <SiRender />
-            <span>Render</span>
+      <div className="projectDetailed-carouselContainer">
+        <button className="projectDetailed-carousel__handles" onClick={translateLeft}>
+          <FaChevronLeft />
+        </button>
+        <div className="projectDetailed-carousel">
+          <div className="imgsContainer" id="imgsContainer">
+            <div className="projectDetailed-carouselImg">
+              <img src={`/${imgName}1.png`} alt="" />
+            </div>
+            <div className="projectDetailed-carouselImg">
+              <img src={`/${imgName}2.png`} alt="" />
+            </div>
+            <div className="projectDetailed-carouselImg">
+              <img src={`/${imgName}3.png`} alt="" />
+            </div>
+            <div className="projectDetailed-carouselImg">
+              <img src={`/${imgName}4.png`} alt="" />
+            </div>
+            <div className="projectDetailed-carouselImg">
+              <img src={`/${imgName}5.png`} alt="" />
+            </div>
+            <div className="projectDetailed-carouselImg">
+              <img src={`/${imgName}6.png`} alt="" />
+            </div>
           </div>
         </div>
+        <button className="projectDetailed-carousel__handles" onClick={translateRight}>
+          <FaChevronRight />
+        </button>
       </div>
-      <div className="projectDetailed-description">
-        <h2>The Problem</h2>
-        <p>
-          I used to work at a greengrocers shop where we received a lot of home delivery orders on WhatsApp
-          which we wrote down on an invoice. We often received poorly formatted orders, or had to ask a client
-          important information for the delivery wich made the process slower and prone to errors.
-        </p>
-        <h2>The solution</h2>
-        <p>
-          The app consists of a shopping page with a buying cart. To complete the orders it takes you to a
-          form where you fill all the necesary information for the delivery and then the app takes you to
-          WhatsApp chat with a correctly formatted message filled with the form data. The store then receives
-          a formatted message with all the necesary info, making the order taking process smoother and saving
-          a lot of time
-        </p>
-        <h2>Things to do</h2>
-        <ul>
-          <li>
-            Information section. The page is intended to work both as a shopping app and as a landing page
-          </li>
-          <li>Finish implementation of backoffice to manage products catalog</li>
-          <li>Migrate project from CRA to Vite and reorganize code</li>
-        </ul>
+      <div className="projectDetailed-info">
+        <div className="projectDetailed-info__description">
+          {description}
+          <div className="projectDetailed-info__links">
+            <a href={deploy} target="_blank" rel="noreferrer">
+              Deploy
+            </a>
+            <a href={clientRepo} target="_blank" rel="noreferrer">
+              Client Repo
+            </a>
+            <a href={serverRepo} target="_blank" rel="noreferrer">
+              Server Repo
+            </a>
+          </div>
+        </div>
+        <div className="projectDetailed-tech">
+          <h2>Tech Stack</h2>
+          <div className="projectDetailed-tech__icons">
+            <div>
+              <SiReact />
+              <span>React JS</span>
+            </div>
+            <div>
+              <SiCss3 />
+              <span>CSS</span>
+            </div>
+            <div>
+              <SiExpress />
+              <span>Express JS</span>
+            </div>
+            <div>
+              <SiMysql />
+              <span>MySQL</span>
+            </div>
+            <div>
+              <SiSequelize />
+              <span>Sequelize</span>
+            </div>
+            <div>
+              <SiNodedotjs />
+              <span>Node JS</span>
+            </div>
+            <div>
+              <SiVercel />
+              <span>Vercel</span>
+            </div>
+            <div>
+              <SiRender />
+              <span>Render</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

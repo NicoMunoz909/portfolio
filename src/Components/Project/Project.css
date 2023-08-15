@@ -4,12 +4,12 @@
 
 .project-container__img {
   position: relative;
-  width: 400px;
+  width: 500px;
   margin-right: 40px;
 }
 
 .project-container__img img {
-  width: 400px;
+  width: 100%;
   height: 100%;
   border-radius: 5px;
 }
