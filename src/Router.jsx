@@ -21,7 +21,7 @@ const Router = () => {
               element={
                 <ProjectDetailed
                   title={"Bolson Vegetal"}
-                  imgName={"bolson-vegetal-screen.png"}
+                  imgName={"bolson-vegetal-screen"}
                   deploy="https://bolson-vegetal.vercel.app/"
                   clientRepo="https://github.com/NicoMunoz909/BolsonVegetal-client"
                   serverRepo="https://github.com/NicoMunoz909/BolsonVegetal-server"
@@ -34,7 +34,7 @@ const Router = () => {
               element={
                 <ProjectDetailed
                   title={"Tip Tracer"}
-                  imgName={"tip-tracer-screen.png"}
+                  imgName={"tip-tracer-screen"}
                   deploy="https://tip-tracer-client.vercel.app/"
                   clientRepo="https://github.com/NicoMunoz909/TipTracer-client"
                   serverRepo="https://github.com/NicoMunoz909/TipTracer-server"

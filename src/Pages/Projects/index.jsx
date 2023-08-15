@@ -1,6 +1,6 @@
 import "./Projects.css";
-import bolsonVegetal from "/bolson-vegetal-screen.png";
-import tipTracer from "/tip-tracer-screen.png";
+import bolsonVegetal from "/bolson-vegetal-screen1.png";
+import tipTracer from "/tip-tracer-screen1.png";
 import budgetTracker from "/budget-tracker-screen1.png";
 import Project from "../../Components/Project";
 
@@ -14,7 +14,7 @@ const Projects = () => {
         deploy="https://bolson-vegetal.vercel.app/"
         link="bolson-vegetal"
         imgSrc={bolsonVegetal}
-        style={{ float: "left" }}
+        style={{ flexDirection: "row" }}
       />
       <Project
         title="tip tracer"
@@ -22,7 +22,7 @@ const Projects = () => {
         deploy="https://tip-tracer-client.vercel.app/"
         link="tip-tracer"
         imgSrc={tipTracer}
-        style={{ float: "right" }}
+        style={{ flexDirection: "row-reverse" }}
       />
       <Project
         title="budget tracker"
@@ -30,7 +30,7 @@ const Projects = () => {
         deploy="https://budget-tracker-client-sage.vercel.app/"
         link="budget-tracker"
         imgSrc={budgetTracker}
-        style={{ float: "left" }}
+        style={{ flexDirection: "row" }}
       />
       <p></p>
     </div>
