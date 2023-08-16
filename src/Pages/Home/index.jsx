@@ -10,9 +10,12 @@ const Home = () => {
         Gamer, traveller and music lover. I enjoy making web apps to solve every-day tasks. Constantly
         learning.
       </p>
-      <Link to="/about" id="see-more">
+      <Link to="/about" className="home-link">
         See more about me &#8594;
       </Link>
+      <a href="/cv-nicolas-munoz.pdf" className="home-link" download style={{ marginLeft: "50px" }}>
+        Download my CV &#8595;
+      </a>
       <div className="home-socials">
         <a href="https://github.com/NicoMunoz909" target="_blank" rel="noreferrer">
           <FaGithub />
