@@ -10,3 +10,10 @@
   font-size: 40px;
   margin: 0px 25px 0px 25px;
 }
+
+@media (max-width: 425px) {
+  .contact-socials svg {
+    font-size: 30px;
+    margin: 0px 10px 0px 10px;
+  }
+}

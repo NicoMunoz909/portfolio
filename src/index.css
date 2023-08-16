@@ -44,3 +44,9 @@ h1 {
   padding: 0 10%;
   text-align: left;
 }
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 32px;
+  }
+}

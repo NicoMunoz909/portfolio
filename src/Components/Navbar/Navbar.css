@@ -9,20 +9,19 @@
   height: 20vh;
   padding: 0vh 10%;
   box-shadow: 0px 2px 7px 4px black;
-
   background-color: black;
   z-index: 1;
 }
 
 .navbar-icon {
-  width: 22vh;
+  width: 15vw;
   filter: drop-shadow(0px 0px 4px rgb(187, 186, 186));
 }
 
 .navbar-links {
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: 40vw;
 }
 
 .navbar-links a {
@@ -56,4 +55,14 @@
   box-shadow: 0px 0px 1px 1px white, 0px 1px 1px 1px white;
   transform: translateX(-50%);
   border-radius: 100%;
+}
+
+@media (max-width: 425px) {
+  .navbar-links {
+    width: 60vw;
+  }
+
+  .navbar-links a {
+    font-size: small;
+  }
 }

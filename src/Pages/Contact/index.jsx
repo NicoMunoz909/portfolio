@@ -7,7 +7,7 @@ const Contact = () => {
     <div className="contact content">
       <h1>contact me</h1>
       <div className="contact-socials">
-        <a href="mailto:nimunoz28@gmail.com" target="_blank" rel="noreferrer">
+        <a href="mailto:contact@dev.nmz.world" target="_blank" rel="noreferrer">
           <FiMail />
         </a>
         <a href="https:wa.me/+5493413062939" target="_blank" rel="noreferrer">

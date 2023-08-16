@@ -4,8 +4,8 @@
 
 .about-description .img-container {
   flex-shrink: 0;
-  width: 400px;
-  height: 400px;
+  width: 40vw;
+  height: 40vw;
   border-radius: 100%;
   margin-right: 50px;
   overflow: hidden;
@@ -36,4 +36,25 @@
 .about_technologies__icons svg {
   margin: auto;
   font-size: 48px;
+}
+
+@media (max-width: 425px) {
+  .about-description__content {
+    display: block;
+  }
+
+  .about-description .img-container {
+    width: 70vw;
+    height: 70vw;
+    margin: auto;
+  }
+
+  .about_technologies__icons div {
+    width: 20vw;
+  }
+
+  .about_technologies__icons span {
+    margin: auto;
+    font-size: 14px;
+  }
 }

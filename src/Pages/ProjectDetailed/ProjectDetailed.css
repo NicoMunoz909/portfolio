@@ -1,6 +1,4 @@
 .projectDetailed-info {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 10vh;
 }
 
@@ -45,14 +43,6 @@
   border-radius: 5px;
 }
 
-.projectDetailed-info__description {
-  max-width: 40vw;
-}
-
-.projectDetailed-tech {
-  max-width: 30vw;
-}
-
 .projectDetailed-tech__icons {
   display: flex;
   flex-wrap: wrap;
@@ -86,4 +76,23 @@
 
 .projectDetailed-info__links a:hover {
   filter: drop-shadow(0px 0px 4px rgb(187, 186, 186));
+}
+
+@media (max-width: 425px) {
+  .projectDetailed h1 {
+    font-size: 32px;
+  }
+
+  .projectDetailed-carousel__handles {
+    font-size: 30px;
+  }
+
+  .projectDetailed-tech__icons div {
+    width: 20vw;
+  }
+
+  .projectDetailed-info__links a {
+    margin-right: 15px;
+    text-decoration: underline;
+  }
 }

@@ -39,3 +39,14 @@
 .project-container__description a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 425px) {
+  .project-container {
+    flex-direction: column-reverse !important;
+  }
+
+  .project-container__img {
+    width: 80vw;
+    margin: 30px auto;
+  }
+}
