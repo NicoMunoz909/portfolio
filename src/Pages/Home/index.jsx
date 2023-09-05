@@ -6,10 +6,11 @@ const Home = () => {
   return (
     <div className="home content">
       <h1>nicolás muñoz |</h1>
-      <p style={{ marginBottom: "100px" }}>
-        Gamer, traveller and music lover. I enjoy making web apps to solve every-day tasks. Constantly
-        learning.
+      <p>
+        Web Developer focused on creating web sites that effectively convey the client's personality and
+        offers an excelent user experience.
       </p>
+      <p style={{ marginBottom: "100px" }}>Gamer, traveller, music lover and lifelong learner.</p>
       <Link to="/about" className="home-link">
         See more about me &#8594;
       </Link>
