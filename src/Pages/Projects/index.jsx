@@ -1,6 +1,6 @@
 import "./Projects.css";
 import bolsonVegetal from "/bolson-vegetal-screen1.png";
-import tipTracer from "/tip-tracer-screen1.png";
+import appInventario from "/app-inventario-screen1.png";
 import budgetTracker from "/budget-tracker-screen1.png";
 import Project from "../../Components/Project";
 
@@ -17,11 +17,11 @@ const Projects = () => {
         style={{ flexDirection: "row" }}
       />
       <Project
-        title="tip tracer"
-        description="A web app I made while working as a waiter to keep track of all the tips I earned"
-        deploy="https://tip-tracer-client.vercel.app/"
-        link="tip-tracer"
-        imgSrc={tipTracer}
+        title="App Inventario"
+        description="A custom-built tool for tracking hardware inventory with features for entry logging, sales tracking, and backup/demo identification. Built with Sequelize, Node.js, and a responsive UI."
+        deploy="https://id-automation-inventario.vercel.app/"
+        link="app-inventario"
+        imgSrc={appInventario}
         style={{ flexDirection: "row-reverse" }}
       />
       <Project

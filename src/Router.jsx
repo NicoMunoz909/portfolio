@@ -5,7 +5,11 @@ import About from "./Pages/About";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import ProjectDetailed from "./Pages/ProjectDetailed";
-import { bolsonVegetal, budgetTracker, tipTracer } from "./descriptions.jsx";
+import {
+  bolsonVegetal,
+  budgetTracker,
+  appInventario,
+} from "./descriptions.jsx";
 
 const Router = () => {
   return (
@@ -30,15 +34,15 @@ const Router = () => {
               }
             ></Route>
             <Route
-              path="projects/tip-tracer"
+              path="projects/app-inventario"
               element={
                 <ProjectDetailed
-                  title={"Tip Tracer"}
-                  imgName={"tip-tracer-screen"}
-                  deploy="https://tip-tracer-client.vercel.app/"
-                  clientRepo="https://github.com/NicoMunoz909/TipTracer-client"
-                  serverRepo="https://github.com/NicoMunoz909/TipTracer-server"
-                  description={tipTracer()}
+                  title={"App Inventario"}
+                  imgName={"app-inventario-screen"}
+                  deploy="https://id-automation-inventario.vercel.app/"
+                  clientRepo="https://github.com/NicoMunoz909/proyectoInventarioClient"
+                  serverRepo="https://github.com/NicoMunoz909/proyectoInventario"
+                  description={appInventario()}
                 />
               }
             ></Route>
